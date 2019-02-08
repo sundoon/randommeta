@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+            <!--每30秒刷新页面-->
+            <meta http-equiv="refresh" content="30">
+                <!--为搜索引擎定义关键词-->
+                <meta name="keywords" content="机器学习,人工智能,机器智能,神经网络,自然语言处理,视频理解,nlp,caption">
+                    <!--为网页定义描述内容-->
+                    <meta name="description" content="人工智能知识点总结..">
+                        <!--定义网页作者-->
+                        <meta name="author" content="linshandong">
+                            <title>RandomMeta</title>
+                            <link rel="stylesheet" type="text/css" href="mystyle.css">
+                                <!--link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /-->
+                                <link rel="shortcut icon" href="favicon.ico" mce_href="favicon.ico" type="image/x-icon"/>
+                                <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+                                <script type="text/javascript">
+                                    $(document).ready(function(){
+                                                      //调用函数
+                                                      var pagestyle = function() {
+                                                      var right = $("#content");
+                                                      // 请注意这个3减去300的实际算法
+                                                      var w  = $(window).width() - 272;
+                                                      if(w < 512){
+                                                      w = 512;
+                                                      }
+                                                      right.width(w);
+                                                      }
+                                                      // 窗体加载时自适应宽度
+                                                      pagestyle();
+                                                      // 注册窗体改变大小事件
+                                                      $(window).resize(pagestyle);
+                                                      });
+                                    </script>
+        <style type="text/css">
+            .top{height:104px;}
+            .top-box{position:fixed;top: 0;left: 0;right: 0;height: 104px;background: #fff;z-index: 1;
+                margin-bottom:4px
+            }
+            .rt{background:#eee;margin-left: 320px;}
+            .rt>div{height:500px;}
+            .b1{background:#7373ea;}
+            .b2{background:#ecbc73;}
+            .b3{background:#73caec;}
+            .b4{background:#ec7973;}
+            .lf{float:left;width:300px;background:#ccc;}
+            .lf>div{height:300px;}
+            div{color:#fff;}
+        </style>
+    </head>
+    <body>
+        <div class="top">
+            <div class="top-box">
+                
+                <!--  头部logo  -->
+                <div>
+                    <img src="./logo6.png" width="512" height="64">
+                        </div>
+                <!--  导航栏  -->
+                <div id="header">
+                    <ul id="nav_ul">
+                        <li id="nav_li"><a id="nav_a" href="#home">首页</a></li>
+                        <li id="nav_li"><a id="nav_a" href="#news">理论</a></li>
+                        <li id="nav_li"><a id="nav_a" href="#contact">工程</a></li>
+                        <li id="nav_li"><a id="nav_a" href="#about">机器智能</a></li>
+                        <li id="nav_li"><a id="nav_a" href="#about">神经网络</a></li>
+                        <li id="nav_li"><a id="nav_a" href="#about">语言理解</a></li>
+                        <li id="nav_li"><a id="nav_a" href="#about">视频理解</a></li>
+                        <li id="nav_li"><a id="nav_a" href="#about">联系方式</a></li>
+                    </ul>
+                </div>
+                <br>
+                
+            </div>
+        </div>
+        <div class="clearfix">
+            <div class="lf scrollBox">
+                <div class="b4">右侧悬浮区域</div>
+                <div class="b2"></div>
+            </div>
+            <div class="rt">
+                <div class="b1">左侧主体区域</div>
+                <div class="b2"></div>
+                <div class="b3"></div>
+                <div class="b4"></div>
+            </div>
+            <div style="height:500px"></div>
+        </div>
+        <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script>
+            (function(){window.scrollBox=function(a){var b=this;b.box=a.box||".scrollBox";b.top=a.top||"0px";b.minWidth=a.minWidth||0;b.bottom=a.bottom||0;b.space=a.space||20;b.transition=a.transition==false?false:true;if(a.maxHeightBox){b.maxHeight=$(a.maxHeightBox).offset().top+$(a.maxHeightBox).height()}b.init()};scrollBox.prototype={init:function(){var e=this,d=window.innerWidth,b=window.innerHeight;boxT=$(e.box).offset().top,boxH=$(e.box).height(),boxMT=0;$(window).resize(function(){e.throttle(c,200,3000)()});if(d>=e.minWidth){if(e.transition){$(e.box).css("transition","margin 0.1s ease-out");$(window).scroll(function(){e.throttle(a,200,3000)()})}else{$(window).scroll(function(){a()})}a()}function c(){d=window.innerWidth;b=window.innerHeight;boxT=$(e.box).offset().top-parseFloat($(e.box).css("margin-top"));boxH=$(e.box).height()}function a(){if(d>=e.minWidth){if(e.maxHeight<boxT+boxH+e.space){return false}var g=$(window).scrollTop();if(boxH>b-e.top-e.space*2){if(g<=(boxT-e.top-e.space)){$(e.box).css({"margin-top":"0"})}else{if(e.maxHeight){if(g>e.maxHeight+e.space-b){$(e.box).css({"margin-top":e.maxHeight-boxT-boxH+"px"});return false}}var f=g-boxT-(boxH+e.bottom+e.space-b);if(f<boxMT){if(g<$(e.box).offset().top-e.top-e.space){boxMT=g-boxT+e.top+e.space}}else{boxMT=f}$(e.box).css({"margin-top":boxMT+"px"})}}else{if(g<=(boxT-e.top-e.space)){$(e.box).css({"margin-top":"0"})}else{if(e.maxHeight){if(g>e.maxHeight-boxH-e.top-e.space){return false}}var f=g-boxT+e.top+e.space;$(e.box).css({"margin-top":f+"px"})}}}}},throttle:function(c,b,a){var e=null;var d=null;return function(){var f=+new Date();!d&&(d=f);if(a&&f-d>a){c();d=f}else{clearTimeout(e);e=setTimeout(function(){c();d=null},b)}}}}}());
+            new scrollBox({
+                          box:'.scrollBox',    //悬浮框id或class
+                          top:50,                //顶部固定header高度
+                          bottom:0,            //底部固定footer高度
+                          space:20,            //悬浮框距离头部和尾部的间距
+                          maxHeightBox:'.rt',    //需要跟随主体内容的id或class
+                          minWidth:1000,        //需要悬浮跟随的屏幕最小宽度
+                          transition:true        //是否启用函数节流和跟随动画
+                          });
+            </script>
+    </body>
+</html>
+

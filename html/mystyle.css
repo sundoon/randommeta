@@ -1,0 +1,165 @@
+
+body{
+    margin:0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container
+{
+    /* IE6 不支持min-width属性，但是IE7+和W3C支持 */
+    min-width:1024px;
+    /* 用CSS表达式让IE6也支持最小宽度 */
+    _width:expression((document.documentElement.clientWidth||document.body.clientWidth)<1024?"1024px":"");
+    margin: 0 16px;
+}
+
+#main
+{
+    padding-left:32px;
+    padding-right: 32px;
+    margin-top: 16px;
+}
+#main_content{
+    width: 100%;
+}
+
+#header {
+    padding-left: 32px;
+    padding-right: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#FF7F00;
+}
+
+#menu {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#FF7F00;
+    margin:0px 8px;
+    padding:0px 4px;
+}
+#menu_ul {
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+#menu_li {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 8px 0px;
+}
+#menu_a:link,#menu_a:visited
+{
+    font-family: Arial, Helvetica, sans-serif;
+    display:block;
+    font-weight:bold;
+    color:#FFFFFF;
+    background-color:#bebebe;
+    width:128px;
+    text-align:center;
+    padding:4px;
+    text-decoration:none;
+    text-transform:uppercase;
+}
+#menu_a:hover,#menu_a:active
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#FF9F3F;
+}
+.blank {
+    width:50px;
+}
+
+#nav_ul {
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+}
+
+#nav_li {
+    font-family: Arial, Helvetica, sans-serif;
+    float:left;
+}
+#nav_a:link,#nav_a:visited
+{
+    font-family: Arial, Helvetica, sans-serif;
+    display:block;
+    font-weight:bold;
+    color:#FFFFFF;
+    background-color:#FF7F00;
+    width:128px;
+    text-align:center;
+    padding:4px;
+    text-decoration:none;
+    text-transform:uppercase;
+}
+#nav_a:hover,#nav_a:active
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#bebebe;
+}
+
+
+.h_center {
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0 auto;
+}
+
+#content {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#F0F0F0;
+    height:1024px;
+    /*width:1024px;*/
+    float:left;
+    margin:0px 8px;
+    padding:32px 32px;
+}
+
+#background_img {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image:url('./logo7.png');
+    background-repeat:no-repeat;
+}
+
+#footer {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#FF7F00;
+    clear:both;
+    color:#FFFFFF;
+    text-align:center;
+}
+
+.top{
+    height:108px;
+}
+
+.top-box{
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 8px;
+    z-index: 1;
+    background: #fff;
+    height:100px;
+    margin-bottom:4px
+}
+
+.left{
+    width:256px
+    float:left;
+}
+
+.left-box{
+    position:fixed;
+    top: 128px;
+    left: 16px;
+    z-index: 1;
+    margin-bottom:4px
+}
+
+.right {
+    float:right;
+    right:16px;
+}
