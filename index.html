@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <!--每30秒刷新页面-->
+        <meta http-equiv="refresh" content="30">
+        <!--为搜索引擎定义关键词-->
+        <meta name="keywords" content="机器学习,人工智能,机器智能,神经网络,自然语言处理,视频理解,nlp,caption">
+        <!--为网页定义描述内容-->
+        <meta name="description" content="人工智能知识点总结..">
+        <!--定义网页作者-->
+        <meta name="author" content="linshandong">
+        <title>RandomMeta</title>
+        <link rel="stylesheet" type="text/css" href="http://www.randommeta.com/html/mystyle.css">
+        <!--link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /-->
+        <link rel="shortcut icon" href="http://www.randommeta.com/icons/favicon.ico" mce_href="http://www.randommeta.com/icons/favicon.ico" type="image/x-icon"/>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                              //调用函数
+                              var pagestyle = function() {
+                              var right = $("#content");
+                              // 请注意这个3减去300的实际算法
+                              var w  = $(window).width() - 280;
+                              if(w < 512){
+                              w = 512;
+                              }
+                              right.width(w);
+                              }
+                              // 窗体加载时自适应宽度
+                              pagestyle();
+                              // 注册窗体改变大小事件
+                              $(window).resize(pagestyle);
+                              });
+        </script>
+    </head>
+    <body>
+        <div id="container">
+            
+            <div class="top">
+                <div class="top-box">
+                    <!--  头部logo  -->
+                    <div>
+                        <a href="http://www.randommeta.com">
+                            <img src="http://www.randommeta.com/imgs/logo6.png" width="512" height="64">
+                        </a>
+                    </div>
+                    <!--  导航栏  -->
+                    <div id="header">
+                        <ul id="nav_ul">
+                            <li id="nav_li"><a id="nav_a" href="#home">首页</a></li>
+                            <li id="nav_li"><a id="nav_a" href="#news">理论</a></li>
+                            <li id="nav_li"><a id="nav_a" href="#contact">工程</a></li>
+                            <li id="nav_li"><a id="nav_a" href="#about">机器智能</a></li>
+                            <li id="nav_li"><a id="nav_a" href="#about">神经网络</a></li>
+                            <li id="nav_li"><a id="nav_a" href="#about">语言理解</a></li>
+                            <li id="nav_li"><a id="nav_a" href="#about">视频理解</a></li>
+                            <li id="nav_li"><a id="nav_a" href="#about">联系方式</a></li>
+                        </ul>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            
+            <div di="main">
+                <!--  侧边栏  -->
+                <div class="left">
+                    <div class="left-box">
+                        <div id="menu">
+                            <b>&nbsp;</b><br>
+                            <ul id="menu_ul">
+                                <li id="menu_li"><a id="menu_a" href="#home">首页</a></li>
+                                <li id="menu_li"><a id="menu_a" href="#news">理论</a></li>
+                                <li id="menu_li"><a id="menu_a" href="#contact">工程</a></li>
+                                <li id="menu_li"><a id="menu_a" href="#about">机器智能</a></li>
+                                <li id="menu_li"><a id="menu_a" href="#about">神经网络</a></li>
+                                <li id="menu_li"><a id="menu_a" href="#about">语言理解</a></li>
+                                <li id="menu_li"><a id="menu_a" href="#about">视频理解</a></li>
+                                <li id="menu_li"><a id="menu_a" href="#about">联系方式</a></li>
+                            </ul>
+                            <b>&nbsp;</b><br>
+                        </div>
+                        <div style="margin:64px 0; padding:0 8px">
+                            <a href="http://www.randommeta.com">
+                                <img src="http://www.randommeta.com/imgs/logo3.png" width="150" height="150">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--  主要内容  -->
+                <div class="right">
+                    <div id="content">
+                        内容在这里
+                    </div>
+                </div>
+                
+            </div>
+            <br>
+            
+            <div id="footer">
+                版权 © RandomMeta.com
+            </div>
+        </div>
+    </body>
+</html>
